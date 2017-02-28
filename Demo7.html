@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Demo7</title>
+		<style type="text/css">
+			body{
+				background-color: #EAF0F2;
+				background: #000;
+			}
+			.stage{
+				width: 400px;
+				height: 400px;
+				margin: 100px auto;
+				background: url(http://p2.qhimg.com/t01d0bccc09b80b460d.jpg) no-repeat;
+				background-size: cover;
+			}
+			.rocketship{
+				width: 130px;
+				height: 250px;
+				margin-left: -60px;
+				background: url(http://p5.qhimg.com/t018efa521643aa9ede.png);
+				background-size: cover;
+				-webkit-transform-origin: 200% 75%;
+				transform-origin: 200% 75%;
+				-webkit-animation: circle 1s infinite linear;
+			}
+			@-webkit-keyframes circle{
+				to{
+					-webkit-transform: rotate(1turn);
+					transform: rotate(1turn);
+					/*turn=圈*/
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="stage">
+			<div class="rocketship"></div>
+		</div>
+	</body>
+</html>
